@@ -1,7 +1,17 @@
-<% include ../partials/header.ejs %>
-<% include ../partials/navbar.ejs %>
-<main class="container">
-    <h1>Users</h1>
+<% include ../partials/header1.ejs %>
+<% include ../partials/navbar1.ejs %>
+
+<section id="main-slider" class="main-slider text-center">
+    <div class="head-overlay">
+         
+      <ul class="bxslider">
+        <li>
+          <div class="head-overlay">
+            <img src="images/slider/2.jpg"/>
+          </div><!-- /.head-overlay -->
+          <div class="slider-font">
+     <div class="form-area text-center wow animated fadeInRight" style="margin-top:13%;left:10%;width:40%;" data-wow-delay=".75s">
+     <h2 class="section-title"><span>My </span> Profile</h2><!-- /.section-title -->
 
     <a href="/users/add">Add a New User</a>
 
@@ -25,5 +35,61 @@
             </li>
         <% } %>
     </ul>
-</main>
-<% include ../partials/footer.ejs %>
+                </div>
+               
+                   <div class="form-area text-center wow animated fadeInRight" style="margin-top:13%;right:10%;width:40%;" data-wow-delay=".75s">
+     <h2 class="section-title"><span>Survey </span> Statistics</h2><!-- /.section-title -->
+
+<div class="about-middle">
+      <div class="about-breifing">
+        <div class="col-md-12 col-sm-6" >
+          <div class="item media wow animated fadeInLeft" data-wow-delay=".35s">
+            <div class="section-padding">
+              <div class="item-no media-left">
+                <span class="count text-right">CS</span>
+              </div><!-- /.item-no -->
+              <div class="item-details media-body text-center">
+                <div class="item-icon">
+                  <i class="fa fa-heart-o"></i>
+                </div><!-- /.item-icon -->
+                <div class="countdown">
+                  <span class="count-number counter">8,236</span>
+                </div><!-- /.coundown -->
+                <span class="about-item">Created Survey</span>
+              </div><!-- /.item-details -->
+            </div><!-- /.section-padding -->
+          </div><!-- /.item -->
+        </div>
+                </div>
+          </div>
+          <br/>
+          <div class="about-middle">
+      <div class="about-breifing">
+        <div class="col-md-12 col-sm-6" >
+          <div class="item media wow animated fadeInLeft" data-wow-delay=".35s">
+            <div class="section-padding">
+              <div class="item-no media-left">
+                <span class="count text-right">RS</span>
+              </div><!-- /.item-no -->
+              <div class="item-details media-body text-center">
+                <div class="item-icon">
+                  <i class="fa fa-heart-o"></i>
+                </div><!-- /.item-icon -->
+                <div class="countdown">
+                  <span class="count-number counter">8,236</span>
+                </div><!-- /.coundown -->
+                <span class="about-item">Responded Survey</span>
+              </div><!-- /.item-details -->
+            </div><!-- /.section-padding -->
+          </div><!-- /.item -->
+        </div>
+      </div>
+          
+          </div>
+        </li>
+      </ul>
+      </div>
+</section>
+
+        
+<% include ../partials/footer1.ejs %>

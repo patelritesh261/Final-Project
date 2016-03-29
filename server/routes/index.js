@@ -12,6 +12,12 @@ router.get('/', function (req, res, next) {
         title: 'Home',
         displayName: req.user ? req.user.displayName : '' });
 });
+/* GET home page. */
+router.get('/test', function (req, res, next) {
+    res.render('test', {
+        title: 'Home',
+        displayName: req.user ? req.user.displayName : '' });
+});
 /* GET product page. */
 router.get('/products', function (req, res, next) {
     res.render('index', {
@@ -26,7 +32,7 @@ router.get('/services', function (req, res, next) {
 });
 /* GET about page. */
 router.get('/about', function (req, res, next) {
-    res.render('index', {
+    res.render('about', {
         title: 'About',
         displayName: req.user ? req.user.displayName : '' });
 });

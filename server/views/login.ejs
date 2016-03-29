@@ -1,13 +1,23 @@
-<% include partials/header.ejs %>
-<% include partials/navbar.ejs %>
-     <main class="container">
-     <% if (messages.length > 0) { %>
-        <div class="alert alert-danger"><%= messages %></div>
+<% include partials/header1.ejs %>
+<% include partials/navbar1.ejs %>
+ <!-- Main Slider -->
+
+  <section id="main-slider" class="main-slider text-center">
+    <div class="head-overlay">
+      <ul class="bxslider">
+        <li>
+          <div class="head-overlay">
+            <img src="images/slider/2.jpg"/>
+          </div><!-- /.head-overlay -->
+          <div class="slider-font">
+           
+               <div class="form-area text-center wow animated fadeInRight" style="margin-top:13%;left:30%;" data-wow-delay=".75s">
+        <h2 class="section-title"><span>Sign</span> In</h2><!-- /.section-title -->
+             
+      <form method="post" id="contactform" class="contactform">
+           <% if (messages.length > 0) { %>
+        <div class="alert alert-danger"><span><%= messages %></span></div>
       <% } %>
-      <div class="row">
-        <div class="col-md-offset-4 col-md-4">
-           <h1>Please Login</h1>
-           <form method="post">
                 <fieldset class="form-group">
                     <label>Username:</label>
                     <input type="text" class="form-control" name="username" required autofocus/>
@@ -18,13 +28,15 @@
                     or <a href="/register">Register</a>
                 </fieldset>
                 <fieldset class="form-group text-right">
-                    <input type="submit" class="btn btn-success" value="Log In"/>
+                    <input type="submit" class="btn submit-btn" value="Log In"/>
                     <a href="/">
-                        <input type="button" class="btn btn-warning" value="Cancel"/>
+                        <input type="button" class="btn submit-btn" value="Cancel"/>
                     </a>
                </fieldset>
             </form>
-         </div> 
-      </div>
-    </main>
-<% include partials/footer.ejs %>
+           
+      </div><!-- /.form-area -->
+    </div><!-- /.contact-inner -->
+  </section>
+             
+<% include partials/footer1.ejs %>

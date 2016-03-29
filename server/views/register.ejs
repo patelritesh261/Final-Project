@@ -1,15 +1,23 @@
-<% include partials/header.ejs %>
-<% include partials/navbar.ejs %>	
+<% include partials/header1.ejs %>
+<% include partials/navbar1.ejs %>	
 	<!-- Render the Registration form  -->
-	<main class="container">
+	<section id="main-slider" class="main-slider text-center">
+    <div class="head-overlay">
+      <ul class="bxslider">
+        <li>
+          <div class="head-overlay">
+            <img src="images/slider/2.jpg"/>
+          </div><!-- /.head-overlay -->
+          <div class="slider-font">
+           <div class="form-area text-center wow animated fadeInRight" style="margin-top:13%;left:30%;" data-wow-delay=".75s">
+        <h2 class="section-title"><span>Sign</span> Up</h2><!-- /.section-title -->
+             
 	<!-- Display flash messages  -->
 	<% if (messages.length > 0) { %>
         <div class="alert alert-danger"><%= messages %></div>
       <% } %>
-		<div class="row">
-            <div class="col-md-offset-4 col-md-4">
-                <h1>User Registration</h1>
-                <form method="post">
+	
+               <form method="post" id="contactform" class="contactform">
                     <fieldset class="form-group">
                         <label for="email">Email: *</label>
                         <input name="email" type="email" class="form-control" required autofocus />
@@ -27,13 +35,14 @@
                         <input name="displayName" type="text" class="form-control" required />
                     </fieldset>
                     <fieldset class="form-group text-right">
-                        <input type="submit" class="btn btn-success" value="Submit"/>
+                        <input type="submit" class="btn submit-btn" value="Submit"/>
                         <a href="/">
-                            <input type="button" class="btn btn-warning" value="Cancel"/>
+                            <input type="button" class="btn submit-btn" value="Cancel"/>
                         </a>
                     </fieldset>
                 </form>
-            </div> 
-        </div>
-	</main>
-<% include partials/footer.ejs %>
+            </div><!-- /.form-area -->
+    </div><!-- /.contact-inner -->
+  </section>
+
+<% include partials/footer1.ejs %>

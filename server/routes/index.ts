@@ -13,6 +13,12 @@ router.get('/', (req: express.Request, res: express.Response, next: any) => {
         title: 'Home', 
         displayName: req.user ? req.user.displayName : '' });
 });
+/* GET home page. */
+router.get('/test', (req: express.Request, res: express.Response, next: any) => {
+    res.render('test', { 
+        title: 'Home', 
+        displayName: req.user ? req.user.displayName : '' });
+});
 
 /* GET product page. */
 router.get('/products', (req: express.Request, res: express.Response, next: any) => {
@@ -30,7 +36,7 @@ router.get('/services', (req: express.Request, res: express.Response, next: any)
 
 /* GET about page. */
 router.get('/about', (req: express.Request, res: express.Response, next: any) => {
-    res.render('index', { 
+    res.render('about', { 
         title: 'About',
         displayName: req.user ? req.user.displayName : '' });
 });
